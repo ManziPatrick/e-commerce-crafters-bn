@@ -1,0 +1,15 @@
+{
+    "builds": [
+      {
+        "src": "index.ts", // Your entry TypeScript file
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.ts"
+      }
+    ]
+  }
+  
